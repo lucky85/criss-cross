@@ -13,7 +13,6 @@ class CrissCross {
     el: any;
     gameNam: number = 1;
     activeCell: number = 4;
-    private x: boolean;
     constructor() {
         this.winComb = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -72,7 +71,7 @@ class CrissCross {
             } else if (e.keyCode == 57 && this.el[this.activeCell].innerHTML != "O" && this.el[this.activeCell].innerHTML != "X") {
                 this.el[this.activeCell].innerHTML = player2.symbol;
                 this.checkWin(player2.symbol);
-            } else;
+            }
         } else if (player1.active) {
             if (e.keyCode == 65 && this.activeCell > 0 && this.activeCell <= 8) {
                 this.el[this.activeCell].removeAttribute('id');
@@ -93,8 +92,8 @@ class CrissCross {
             } else if (e.keyCode == 90 && this.el[this.activeCell].innerHTML != "O" && this.el[this.activeCell].innerHTML != "X") {
                 this.el[this.activeCell].innerHTML = player1.symbol;
                 this.checkWin(player1.symbol);
-            } else;
-        } else;
+            }
+        }
     }
 
     clear(){

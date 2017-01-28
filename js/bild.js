@@ -122,8 +122,6 @@
 	                this.el[this.activeCell].innerHTML = player2.symbol;
 	                this.checkWin(player2.symbol);
 	            }
-	            else
-	                ;
 	        }
 	        else if (player1.active) {
 	            if (e.keyCode == 65 && this.activeCell > 0 && this.activeCell <= 8) {
@@ -150,11 +148,7 @@
 	                this.el[this.activeCell].innerHTML = player1.symbol;
 	                this.checkWin(player1.symbol);
 	            }
-	            else
-	                ;
 	        }
-	        else
-	            ;
 	    };
 	    CrissCross.prototype.clear = function () {
 	        for (var j = 0; j < this.el.length; j++) {
