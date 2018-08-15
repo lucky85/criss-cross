@@ -1,1 +1,1 @@
-Tic-Tac-Toe on TypeScripn
+Tic-Tac-Toe on TypeScript
